@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38F919641F443B0D0029EE35 /* down_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 38F919611F443B0D0029EE35 /* down_dark.png */; };
+		38F919651F443B0D0029EE35 /* ZKComboBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F919631F443B0D0029EE35 /* ZKComboBoxView.m */; };
 		9B9C3D581C702D3F005BD20C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C3D571C702D3F005BD20C /* main.m */; };
 		9B9C3D5B1C702D3F005BD20C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C3D5A1C702D3F005BD20C /* AppDelegate.m */; };
 		9B9C3D5E1C702D3F005BD20C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C3D5D1C702D3F005BD20C /* ViewController.m */; };
@@ -14,8 +16,6 @@
 		9B9C3D631C702D3F005BD20C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C3D621C702D3F005BD20C /* Images.xcassets */; };
 		9B9C3D661C702D3F005BD20C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C3D641C702D3F005BD20C /* LaunchScreen.xib */; };
 		9B9C3D721C702D3F005BD20C /* ZKComboBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C3D711C702D3F005BD20C /* ZKComboBoxTests.m */; };
-		9B9C3D7D1C702D7A005BD20C /* ZKComboBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C3D7C1C702D7A005BD20C /* ZKComboBoxView.m */; };
-		9B9C3D7F1C703233005BD20C /* down_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C3D7E1C703233005BD20C /* down_dark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38F919611F443B0D0029EE35 /* down_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_dark.png; sourceTree = "<group>"; };
+		38F919621F443B0D0029EE35 /* ZKComboBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKComboBoxView.h; sourceTree = "<group>"; };
+		38F919631F443B0D0029EE35 /* ZKComboBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKComboBoxView.m; sourceTree = "<group>"; };
 		9B9C3D521C702D3E005BD20C /* ZKComboBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKComboBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9C3D561C702D3F005BD20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B9C3D571C702D3F005BD20C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,9 +45,6 @@
 		9B9C3D6B1C702D3F005BD20C /* ZKComboBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKComboBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9C3D701C702D3F005BD20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B9C3D711C702D3F005BD20C /* ZKComboBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKComboBoxTests.m; sourceTree = "<group>"; };
-		9B9C3D7B1C702D7A005BD20C /* ZKComboBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKComboBoxView.h; sourceTree = "<group>"; };
-		9B9C3D7C1C702D7A005BD20C /* ZKComboBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKComboBoxView.m; sourceTree = "<group>"; };
-		9B9C3D7E1C703233005BD20C /* down_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_dark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +65,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38F919601F443B0D0029EE35 /* ZKComboBoxView */ = {
+			isa = PBXGroup;
+			children = (
+				38F919611F443B0D0029EE35 /* down_dark.png */,
+				38F919621F443B0D0029EE35 /* ZKComboBoxView.h */,
+				38F919631F443B0D0029EE35 /* ZKComboBoxView.m */,
+			);
+			path = ZKComboBoxView;
+			sourceTree = "<group>";
+		};
 		9B9C3D491C702D3E005BD20C = {
 			isa = PBXGroup;
 			children = (
@@ -86,13 +96,11 @@
 		9B9C3D541C702D3F005BD20C /* ZKComboBox */ = {
 			isa = PBXGroup;
 			children = (
-				9B9C3D7E1C703233005BD20C /* down_dark.png */,
 				9B9C3D591C702D3F005BD20C /* AppDelegate.h */,
 				9B9C3D5A1C702D3F005BD20C /* AppDelegate.m */,
 				9B9C3D5C1C702D3F005BD20C /* ViewController.h */,
 				9B9C3D5D1C702D3F005BD20C /* ViewController.m */,
-				9B9C3D7B1C702D7A005BD20C /* ZKComboBoxView.h */,
-				9B9C3D7C1C702D7A005BD20C /* ZKComboBoxView.m */,
+				38F919601F443B0D0029EE35 /* ZKComboBoxView */,
 				9B9C3D5F1C702D3F005BD20C /* Main.storyboard */,
 				9B9C3D621C702D3F005BD20C /* Images.xcassets */,
 				9B9C3D641C702D3F005BD20C /* LaunchScreen.xib */,
@@ -176,6 +184,7 @@
 				TargetAttributes = {
 					9B9C3D511C702D3E005BD20C = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = C2Y8Q3RAAW;
 					};
 					9B9C3D6A1C702D3F005BD20C = {
 						CreatedOnToolsVersion = 6.4;
@@ -208,7 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B9C3D611C702D3F005BD20C /* Main.storyboard in Resources */,
-				9B9C3D7F1C703233005BD20C /* down_dark.png in Resources */,
+				38F919641F443B0D0029EE35 /* down_dark.png in Resources */,
 				9B9C3D661C702D3F005BD20C /* LaunchScreen.xib in Resources */,
 				9B9C3D631C702D3F005BD20C /* Images.xcassets in Resources */,
 			);
@@ -228,7 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B9C3D7D1C702D7A005BD20C /* ZKComboBoxView.m in Sources */,
+				38F919651F443B0D0029EE35 /* ZKComboBoxView.m in Sources */,
 				9B9C3D5E1C702D3F005BD20C /* ViewController.m in Sources */,
 				9B9C3D5B1C702D3F005BD20C /* AppDelegate.m in Sources */,
 				9B9C3D581C702D3F005BD20C /* main.m in Sources */,
@@ -359,7 +368,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2Y8Q3RAAW;
 				INFOPLIST_FILE = ZKComboBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -369,7 +380,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2Y8Q3RAAW;
 				INFOPLIST_FILE = ZKComboBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -428,6 +441,7 @@
 				9B9C3D771C702D3F005BD20C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B9C3D781C702D3F005BD20C /* Build configuration list for PBXNativeTarget "ZKComboBoxTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +450,7 @@
 				9B9C3D7A1C702D3F005BD20C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
