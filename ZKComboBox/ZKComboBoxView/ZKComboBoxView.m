@@ -49,7 +49,7 @@ double const ZKComboBoxViewAutoHeight =  123456.654321;
     
     
     _selectButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _selectButton.frame = self.frame;
+    _selectButton.frame = self.bounds;
     [_selectButton addTarget:self action:@selector(touchBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [_selectButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self addSubview:_selectButton];
@@ -98,6 +98,11 @@ double const ZKComboBoxViewAutoHeight =  123456.654321;
 
 - (CGFloat)tableHeight {
     if (_tableHeight == ZKComboBoxViewAutoHeight) {
+        CGFloat height = self.superview.frame.size.height - CGRectGetMaxY(self.frame);
+        if (self.tableView.contentSize.height > height) {
+            return height;
+        }
+        
         return self.tableView.contentSize.height;
     } else {
         return _tableHeight;
