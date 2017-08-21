@@ -7,10 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+extern double const ZKComboBoxViewAutoHeight;
 
 @interface ZKComboBoxView : UIView<UITableViewDataSource,UITableViewDelegate>
-@property(nonatomic)UIButton *selectButton;
-@property(nonatomic)NSString *selectValue;
-@property(nonatomic)NSArray *comboBoxDatasource;
-@property(nonatomic)BOOL isShow;
+
+@property (nonatomic,strong) UIButton *selectButton;
+//右侧图标
+@property (nonatomic,strong,readonly) UIImageView *rightView;
+@property (nonatomic,strong,readonly) UITableView *tableView;
+
+@property (nonatomic,strong) NSArray<NSString *> *data;
+@property (nonatomic,readonly) NSString *displayText;
+//选中项
+@property (nonatomic) NSInteger selectIndex;
+@property (nonatomic) CGFloat tableHeight;
+
 @end
