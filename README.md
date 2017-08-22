@@ -17,8 +17,8 @@ pod 'Masonry'
 ### 创建 
 ```
 ZKComboBoxView *comboxView = [[ZKComboBoxView alloc]initWithFrame:CGRectMake(0, 100, 200, 30)];
-    comboxView.data = @[@"11",@"222",@"333",@"444"];
-     [self.view addSubview:comboxView];
+comboxView.data = @[@"11",@"222",@"333",@"444"];
+[self.view addSubview:comboxView];
 [comboxView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.and.right.mas_equalTo(0);
         make.height.mas_equalTo(40);
