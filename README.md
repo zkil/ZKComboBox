@@ -12,7 +12,7 @@
 ### 创建 
 ```
 ZKComboBoxView *comboxView = [[ZKComboBoxView alloc]initWithFrame:CGRectMake(0, 100, 200, 30)];
-    comboxView.data = @[@"11",@"222",@"333",@"444"];
+comboxView.data = @[@"11",@"222",@"333",@"444"];
 [self.view addSubview:comboxView];
 
 ```
