@@ -2,7 +2,7 @@
 ## 简介
 一个抽屉下拉选择框  
 ### 效果
-![]()  
+![](https://github.com/zkil/ZKComboBox/blob/master/timeline.gif?raw=true)  
 ### 依赖
 ```
 pod 'Masonry'
